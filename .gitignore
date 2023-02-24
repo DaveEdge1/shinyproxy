@@ -3,3 +3,4 @@
 /application.yml
 /.project
 *.gz
+.Rproj.user

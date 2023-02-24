@@ -1,0 +1,5 @@
+docker pull openanalytics/shinyproxy-demo
+docker network create sp-example-net
+cd to shinyproxy
+(docker build . -t davidedge/lipd_webapps:shinyproxy7)
+docker run -d -v /var/run/docker.sock:/var/run/docker.sock --net sp-example-net -p 80:80 davidedge/lipd_webapps:shinyproxy7
